@@ -4,8 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "playroom:start": "playroom start",
-    "playroom:build": "playroom build"
+    "start": "playroom start",
+    "build": "playroom build"
   },
   "devDependencies": {
     "playroom": "^0.9.1"

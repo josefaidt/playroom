@@ -8,29 +8,29 @@ module.exports = {
   // frameComponent: './playroom/FrameComponent.js',
   widths: [320, 375, 768, 1024],
   port: 9000,
-  openBrowser: true,
+  openBrowser: false,
   exampleCode: `
     <Button>
       Hello World!
     </Button>
   `,
-  webpackConfig: () => ({
-    // Custom webpack config goes here...
-    module: {
-      rules: [
-        {
-          test: /\.js$/,
-          exclude: /node_modules/,
-          use: [
-            {
-              loader: 'babel-loader',
-              options: {
-                presets: [['@babel/preset-env', { modules: false }], '@babel/preset-react'],
-              },
-            },
-          ],
-        },
-      ],
-    },
-  }),
+  // webpackConfig: () => ({
+  //   // Custom webpack config goes here...
+  //   module: {
+  //     rules: [
+  //       {
+  //         test: /\.js$/,
+  //         exclude: /node_modules/,
+  //         use: [
+  //           {
+  //             loader: 'babel-loader',
+  //             options: {
+  //               presets: [['@babel/preset-env', { modules: false }], '@babel/preset-react'],
+  //             },
+  //           },
+  //         ],
+  //       },
+  //     ],
+  //   },
+  // }),
 }

@@ -1,4 +1,8 @@
+const Button = require('./Button/Button')
+const { Text } = require('./Text/Text')
+
 module.exports = {
-  Button: require('./Button'),
+  Text,
+  Button,
   // etc...
 }
